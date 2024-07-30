@@ -1,0 +1,14 @@
+string seq_no
+string cmd
+string par1
+string par2
+string par3
+string par4
+string par5
+
+---
+string seq_no
+uint16 response_cd
+string component_cd
+string status_cd
+string result

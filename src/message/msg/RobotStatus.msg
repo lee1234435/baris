@@ -1,0 +1,2 @@
+string result
+string robot_state

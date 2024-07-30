@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/lee/Desktop/xarm_ros2_moveit/install/xarm_planner/include/**",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/xarm_gazebo/include/**",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/xarm_controller/include/**",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/xarm_api/include/**",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/xarm_msgs/include/**",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/realsense_gazebo_plugin/include/**",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/robot_service/include/**",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/interface_package/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

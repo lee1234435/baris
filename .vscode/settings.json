@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/path/to/your/robot_package",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/xarm_msgs/local/lib/python3.10/dist-packages",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/uf_ros_lib/lib/python3.10/site-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/store_package/lib/python3.10/site-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/robot_service/local/lib/python3.10/dist-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/robot_package/lib/python3.10/site-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/interface_package/local/lib/python3.10/dist-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/db_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/path/to/your/robot_package",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/xarm_msgs/local/lib/python3.10/dist-packages",
+        "/home/lee/Desktop/xarm_ros2_moveit/install/uf_ros_lib/lib/python3.10/site-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/store_package/lib/python3.10/site-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/robot_service/local/lib/python3.10/dist-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/robot_package/lib/python3.10/site-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/interface_package/local/lib/python3.10/dist-packages",
+        "/home/lee/Desktop/Aris_Team5_build_test/install/db_package/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

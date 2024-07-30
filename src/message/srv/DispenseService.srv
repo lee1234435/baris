@@ -1,0 +1,9 @@
+# Request
+string seq_no
+string dev_id
+string command
+---
+
+# Result
+string seq_no
+uint16 response_cd
