@@ -50,13 +50,18 @@ class RobotSystemNode(Node):
         :return 서비스 응답
         """
         try:
-
             return_value = self.robot_system.execute(request=request)
             response.seq_no = request.seq_no
             response.component_cd = return_value.component_cd
             response.response_cd = return_value.response_cd
             response.status_cd = return_value.status_cd
             response.result = return_value.result
+
+            self.node_status = response.status_cd
+
+            if response.result == "RESET SEQUENCE":
+                self.robot_system.request_cnt = 0
+                
 
         except Exception as error:
             print(f"RobotSystemNode callback_robot_service {error=}, {type(error)=}")
@@ -98,7 +103,8 @@ class RobotSystemNode(Node):
     def component_status(self):
         status_msg = ComponentStatus()
         try:
-            status_msg.status = DeviceStatus.STANDBY
+            # status_msg.status = DeviceStatus.STANDBY
+            status_msg.status = self.get_status()
             status_msg.status_code = ResponseCode.SUCCESS
             status_msg.stock = Constants.ZERO
 

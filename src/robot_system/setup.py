@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'robot_system'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/ui', glob('ui/*.ui')),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.py'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,5 +28,6 @@ setup(
             'DispenserNode = robot_system.DispenserNode:main',
             'RobotControllerNode = robot_system.RobotControllerNode:main'
         ],
+
     },
 )

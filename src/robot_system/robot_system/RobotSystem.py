@@ -81,6 +81,8 @@ class RobotSystem:
                 response.status_cd = DeviceStatus.STANDBY
                 response.response_cd = ResponseCode.SUCCESS
                 response.result = "RESET SEQUENCE"
+                self.before_pos = "cmd"
+
 
             elif request.cmd == RobotSystem.ANSWER_CMD[self.request_cnt] and request.par1 == RobotSystem.ANSWER_CMD_PAR[self.request_cnt]:
                 self.request_cnt += 1
